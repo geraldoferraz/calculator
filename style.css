@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f06624;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    /* font-family: 'poppins'; */
+    cursor: pointer;
+    color: #fff;
+}
+
+.calculator {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 70px; /* Adicionamos um espaço entre o header e a calculadora */
+}
+
+.display {
+    font-size: 36px;
+    color: #fff;
+    background-color: #222;
+    text-align: right;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+button {
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #333;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.operator {
+    background-color: #f06624;
+    color: #fff;
+}
+
+.number {
+    background-color: #f2f2f2;
+}
+
+.operator:hover {
+    background-color: #ddd;
+}
+
+.number:hover{
+    background-color: #ddd;
+}
+
+.operator:active {
+    transform: translateY(2px);
+}
+
+.number:active {
+    transform: translateY(2px);
+}
+
+.nulo{
+    background-color: #333;
+    color: #333;
+    cursor:auto;
+}
